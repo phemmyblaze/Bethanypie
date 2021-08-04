@@ -1,0 +1,460 @@
+/*-- EMERALD COLOR- #50C878 */
+
+/*---------------------------------------*/
+/* BASIC SETUP */
+/*---------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.clearfix {zoom: 1;}
+.clearfix::after {
+    background-color: rgb(243, 243, 243);
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*--------------------------------*/
+/*----- HEADER ------*/
+/*--------------------------------*/
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.863)), url(img/bethany-fullsize.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin-bottom: 30px;
+}
+
+.logo {
+    height: 120px;
+    width: auto;
+    margin-top: 20px;
+    float: left;
+}
+
+.main-navigation {
+    float: right;
+    margin-top: 50px;
+}
+
+.main-navigation li {
+    display: inline-block;
+    font-size: 80%;
+}
+
+.main-navigation li a:link,
+.main-navigation li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-right: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-bottom: 1px solid transparent;
+    transition: 0.5s, border-bottom 0.5s, font-weight 0.2s;
+}
+
+.main-navigation li a:hover,
+.main-navigation li a:active {
+    border-bottom: 2px solid #066b28;
+    font-weight: 400;
+}
+
+.header-text {
+    position: absolute;
+    font-weight: 100;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 350%;
+    margin-top: 120px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+.sign-and-log {
+   float: right;
+   margin-top: 67vh;
+}
+
+.sign-and-log li {
+    display: inline-block;
+    font-size: 70%;
+    
+}
+
+.btn-sgn:link,
+.btn-sgn:visited {
+    padding: 10px 15px;
+    font-weight: 300;
+    text-decoration: none;
+    border: 0.5px solid #50C878;
+    border-radius: 20px;
+    color: #50C878;
+    transition: background-color 0.6s, color 0.6s, border  0.2s;
+}
+
+.btn-log:link,
+.btn-log:visited,
+input[type=submit] {
+    padding: 10px 15px;
+    font-weight: 300;
+    text-decoration: none;
+    border: 0.5px solid #50C878;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #50C878;
+    transition: background-color 0.5s, border 0.2s;
+}
+
+.btn-sgn:hover,
+.btn-sgn:active {
+    background-color: #066b28;
+    border: 0.5px solid #066b28;
+    color: #fff;
+}
+
+.btn-log:hover,
+.btn-log:active
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #066b28;
+    border: 0.5px solid #066b28;
+}
+
+/*--------------------------------*/
+/*----- ABOUT US SECTION ------*/
+/*--------------------------------*/
+
+h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 180%;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin-top: 30px;
+}
+
+h2:before {
+    display: block;
+    height: 2px;
+    background-color: #50C878;
+    content: " ";
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 20px;   
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #50C878;
+    content: " ";
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.about-us-1 {
+    line-height: 145%;
+    width: 70%;
+    margin: 0 15% 0 15%;
+    text-align: justify;
+    padding-bottom: 30px;
+    font-size: 90%
+}
+
+.about-us-2 {
+    line-height: 145%;
+    width: 70%;
+    margin: 0 15% 0 15%;
+    text-align: justify;
+    margin-bottom: 30px;
+    font-size: 90%;
+}
+
+/*--------------------------------*/
+/*----- MEAL PICTURES ------*/
+/*--------------------------------*/
+
+.section-images {
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.meal-images {
+    list-style: none;
+    width: 100%;
+}
+
+.meal-images li {
+    float: left;
+    display: inline-block;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.meal-photo img {
+    opacity: 0.9;
+    width: 100%;
+    height: auto;
+    transform: scale(1.20);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover,
+.meal-photo img:active {
+    transform: scale(1.05);
+    transform: rotate(10deg);
+    opacity: 1;
+    box-shadow: 0 3px 25px #000;
+}
+
+.meal-photo-1 {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.meal-photo-1 img {
+    opacity: 0.9;
+    width: 100%;
+    height: auto;
+    transform: scale(1.20);
+    transition: transform 1s, opacity 0.5s;
+}
+
+.meal-photo-1 img:hover,
+.meal-photo-1 img:active {
+    transform: scale(1.05);
+    transform: rotate(-10deg);
+    opacity: 1;
+    box-shadow: 0 3px 25px #000;
+}
+
+
+/*--------------------------------*/
+/*----- CONTACT FORM ------*/
+/*--------------------------------*/
+
+
+.look {
+    line-height: 145%;
+    width: 70%;
+    margin: 0 15% 0 15%;
+    font-size: 90%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.contact-form {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+
+.contact-us {
+    padding: 10px 10px;
+    width: 60%;
+    margin-top: 30px;
+    margin-left: 20%;
+}
+
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+.testing-0 {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+
+.testing-0 label {
+    margin-right: 110px;
+}
+
+.testing-0 .dash input {
+    width: 150%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.testing-1 {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+
+.testing-1 label {
+    margin-right: 130px;
+}
+
+.testing-1 .dash input {
+    width: 150%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.testing-2 {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+
+.testing-2 label {
+    margin-right: 115px;
+}
+
+.testing-2 .dash input {
+    width: 150%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.testing-3 {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+
+.testing-3 label {
+    margin-right: 60px;
+}
+
+.testing-3 .dash select {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.testing-4 {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+
+.testing-4 label {
+    margin-right: 85px;
+}
+
+.testing-4 .dash textarea {
+    width: 168%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.testing-5 {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+
+.testing-5 label {
+    margin-right: 180px;
+}
+
+.testing-5 .dash input {
+    width: 100%;
+}
+
+*:focus {outline: none;}
+
+/*Justify-content: space-between*/
+
+/*--------------------------------*/
+/*----- FOOTER ------*/
+/*--------------------------------*/
+
+footer {
+    background-color: #010c05;
+}
+
+.footer-nav {
+    margin: 30px auto;
+    list-style: none;
+    margin-left: 100px;
+}
+
+.footer-nav li{
+    display: inline-block;
+    margin-right: 80px;
+    font-size: 80%;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+    text-decoration: none;
+    color: rgb(146, 146, 146);
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    transition: color 0.5s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #066b28;
+}
+
+p {
+    text-align: center;
+}
+
+.copyright {
+    display: flex;
+    margin-left: 200px;
+    font-size: 70%;
+    margin-bottom: 20px;
+}
+
+.right {
+    margin-left: 380px;
+}
+
+.creator {
+    font-size: 40%;
+    margin-bottom: 20px;
+}
