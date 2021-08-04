@@ -73,7 +73,7 @@ header {
     padding-bottom: 5px;
     text-align: center;
     border-bottom: 1px solid transparent;
-    transition: 0.5s, border-bottom 0.5s, font-weight 0.2s;
+    transition: 0.3s, border-bottom 0.3s, font-weight 0.2s;
 }
 
 .main-navigation li a:hover,
@@ -145,7 +145,7 @@ input[type=submit] {
 }
 
 .btn-log:hover,
-.btn-log:active
+.btn-log:active,
 input[type=submit]:hover,
 input[type=submit]:active {
     background-color: #066b28;
@@ -307,91 +307,41 @@ textarea {
     border-radius: 3px;
 }
 
-.testing-0 {
-    display: flex;
-    justify-content: start;
+.contact-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 10px;
 }
 
-.testing-0 label {
-    margin-right: 110px;
-    padding: 5px 0;
+.contact-row .contact-name {
+    grid-column: 1/2;
+
+}
+.contact-row .dash {
+    grid-column: 2/4;
 }
 
-.testing-0 .dash input {
-    width: 150%;
+.contact-row .dash input,
+.contact-row .dash textarea,
+.contact-row .dash select {
     border: 1px solid #ccc;
+}
+
+.input-btn input {
     border-radius: 3px;
 }
 
-.testing-1 {
-    display: flex;
-    justify-content: start;
-    margin-bottom: 10px;
+.submit-btn {
+    width: 25%;
+    margin-left: 20px;
 }
 
-.testing-1 label {
-    margin-right: 130px;
-    padding: 5px 0;
-}
+*:focus {outline: none;}
 
-.testing-1 .dash input {
-    width: 150%;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
 
-.testing-2 {
-    display: flex;
-    justify-content: start;
-    margin-bottom: 10px;
-}
 
-.testing-2 label {
-    margin-right: 115px;
-    padding: 5px 0;
-}
 
-.testing-2 .dash input {
-    width: 150%;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-.testing-3 {
-    display: flex;
-    justify-content: start;
-    margin-bottom: 10px;
-}
-
-.testing-3 label {
-    margin-right: 60px;
-    padding: 5px 0;
-}
-
-.testing-3 .dash select {
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-.testing-4 {
-    display: flex;
-    justify-content: start;
-    margin-bottom: 10px;
-}
-
-.testing-4 label {
-    margin-right: 85px;
-    padding-top: 20px;
-}
-
-.testing-4 .dash textarea {
-    width: 168%;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
+/*
 .testing-5 {
     display: flex;
     justify-content: start;
@@ -407,7 +357,7 @@ textarea {
     width: 100%;
 }
 
-*:focus {outline: none;}
+*/
 
 /*Justify-content: space-between*/
 
