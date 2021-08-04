@@ -315,6 +315,7 @@ textarea {
 
 .testing-0 label {
     margin-right: 110px;
+    padding: 5px 0;
 }
 
 .testing-0 .dash input {
@@ -331,6 +332,7 @@ textarea {
 
 .testing-1 label {
     margin-right: 130px;
+    padding: 5px 0;
 }
 
 .testing-1 .dash input {
@@ -347,6 +349,7 @@ textarea {
 
 .testing-2 label {
     margin-right: 115px;
+    padding: 5px 0;
 }
 
 .testing-2 .dash input {
@@ -363,6 +366,7 @@ textarea {
 
 .testing-3 label {
     margin-right: 60px;
+    padding: 5px 0;
 }
 
 .testing-3 .dash select {
@@ -379,6 +383,7 @@ textarea {
 
 .testing-4 label {
     margin-right: 85px;
+    padding-top: 20px;
 }
 
 .testing-4 .dash textarea {
@@ -395,6 +400,7 @@ textarea {
 
 .testing-5 label {
     margin-right: 180px;
+    padding: 5px 0;
 }
 
 .testing-5 .dash input {
