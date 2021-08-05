@@ -52,6 +52,7 @@
     .header-text {
         width: 100%;
         padding: 0 2%;
+        font-size: 50%;
     }
 
     body {font-size: 14px;}
