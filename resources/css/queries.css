@@ -1,0 +1,49 @@
+/* Big tablets to 1200 width */
+@media only screen and (max-width: 1200px) {
+    .header-text {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .row { padding: 0 2%;}
+}
+
+
+/*Small tablet to big tablet; 768-1023px*/
+@media only screen and (max-width: 1023px) {
+    .header-text {
+        width: 100%;
+        padding: 0 2%;
+    }
+    body {font-size: 18px;}
+    section {padding: 10px 0; }
+    h2:before {margin-top: 10px;}
+    .footer-nav li{
+        margin-right: 30px;
+    }
+}
+
+/*Small phones to small tablets; 481-767px*/
+@media only screen and (max-width: 767px) {
+    .header-text {
+        width: 100%;
+        padding: 0 2%;
+    }
+    body {font-size: 16px;}
+    .footer-nav li{
+        margin-right: 10px;
+    }
+}
+
+/*Small phones from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    .header-text {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    body {font-size: 14px;}
+    .footer-nav li{
+        margin-right: 10px;
+    }
+}
