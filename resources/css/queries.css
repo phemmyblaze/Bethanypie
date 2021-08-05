@@ -6,6 +6,12 @@
     }
 
     .row { padding: 0 2%;}
+    .footer-nav li{
+        margin-right: 40px;
+    }
+    .right {
+        margin-left: 250px;
+    }
 }
 
 
@@ -21,6 +27,9 @@
     .footer-nav li{
         margin-right: 30px;
     }
+    .right {
+        margin-left: 150px;
+    }
 }
 
 /*Small phones to small tablets; 481-767px*/
@@ -31,7 +40,10 @@
     }
     body {font-size: 16px;}
     .footer-nav li{
-        margin-right: 10px;
+        margin-right: 20px;
+    }
+    .right {
+        margin-left: 100px;
     }
 }
 
@@ -43,7 +55,11 @@
     }
 
     body {font-size: 14px;}
+    .footer-nav { margin: 30px auto 30px 10px;}
     .footer-nav li{
-        margin-right: 10px;
+        margin-right: 5px;
+    }
+    .right {
+        margin-left: 50px;
     }
 }
